@@ -1,0 +1,85 @@
+.week-offers .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* setting promo cards background images */
+.card-promo:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/main/japan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-promo:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/main/san-andreas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-promo:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/main/paraiba.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-promo:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/main/manaus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-promo {
+    width: 100%;
+    max-width: 312px;
+    text-align: center;
+    color: #FFF;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+}
+
+.card-promo__package {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: .5rem;
+}
+
+.card-promo__destination {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-promo__price {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .card-promo {
+        max-width: 588px;
+    }
+
+    .card-promo__destination {
+        font-size: 3rem;
+    }
+
+    .card-promo__price {
+        font-size: 2.5rem;
+    }
+
+    .card-promo > .btn-link {
+        margin: auto;
+    }
+}

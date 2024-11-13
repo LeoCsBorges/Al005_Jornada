@@ -1,0 +1,38 @@
+.destination {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.destination__image {
+    max-width: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.destination__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+
+.destination__description {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .destination-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .destination__description {
+        padding-right: 2rem;
+    }
+}

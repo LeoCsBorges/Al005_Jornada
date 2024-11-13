@@ -1,0 +1,31 @@
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonial__description {
+    line-height: 1.75rem;
+    margin-bottom: .5rem;
+}
+
+.testimonial__profile {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.testimonial__profile__info__user-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .testimonials-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
