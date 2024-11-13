@@ -7,8 +7,9 @@
 @import url(payment.css);
 @import url(testimonials.css);
 @import url(footer.css);
+@import url(main-header.css);
 @import url(blog-post.css);
-@import url(blog-header.css);
+@import url(form.css);
 
 :root {
     --btn-bg-color: #B81515;

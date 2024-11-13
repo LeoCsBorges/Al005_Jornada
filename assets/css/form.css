@@ -1,0 +1,7 @@
+
+.form__description {
+    text-align: center;
+    color: var(--title-color);
+    font-size: 1rem;
+    line-height: 1.75rem;
+}

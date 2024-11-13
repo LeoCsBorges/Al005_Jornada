@@ -16,6 +16,17 @@
     line-height: 2rem;
 }
 
+.payment__price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.payment__info .btn-link {
+    max-width: 100%;
+    margin-top: 1.5rem;
+}
+
 .payment__images {
     min-height: 460px;
     display: grid;
@@ -39,6 +50,11 @@
     max-width: 100%;
     height: 100%;
     max-height: 254px;
+    min-height: 254px;
+}
+
+.payment-container.pacotes .payment__images img:nth-child(3) {
+    object-position: center;
 }
 
 
