@@ -7,11 +7,14 @@
 @import url(payment.css);
 @import url(testimonials.css);
 @import url(footer.css);
+@import url(blog-post.css);
+@import url(blog-header.css);
 
 :root {
     --btn-bg-color: #B81515;
     --btn-hover-bg-color: #8F0101;
     --card-category-bg-color: #F5F5F5;
+    --title-color: #222222;
 }
 
 body {
@@ -42,6 +45,7 @@ section:not(:nth-child(1)) {
 }
 
 .section-header__title {
+    color: var(--title-color);
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 2.125rem;

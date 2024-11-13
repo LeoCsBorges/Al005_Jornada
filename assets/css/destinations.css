@@ -23,6 +23,16 @@
     line-height: 2rem;
 }
 
+.destination .btn-link {
+    max-width: 100%;
+}
+
+
+@media screen and (min-width: 700px) {
+    .destination .btn-link {
+        max-width: 280px;
+    }
+}
 
 
 @media screen and (min-width: 1440px) {

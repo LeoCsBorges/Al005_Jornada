@@ -53,3 +53,11 @@
         color: var(--btn-hover-bg-color);
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .header__nav {
+        margin: auto;
+        max-width: 1200px;
+        padding-inline: 0;
+    }
+}

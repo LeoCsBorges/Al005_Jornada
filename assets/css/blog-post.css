@@ -1,0 +1,48 @@
+.blog-post__title {
+    color: var(--title-color);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.blog-post__text {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-post__image {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+figure .blog-post__image {
+    margin-bottom: .5rem;
+}
+
+figure figcaption {
+    color: var(--title-color);
+    font-size: .875rem;
+    margin-bottom: 2rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .blog-post-wrapper {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .blog-post-wrapper .blog-post__image {
+        max-width: 50%;
+        object-fit: cover;
+    }
+
+    figure .blog-post__image {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
