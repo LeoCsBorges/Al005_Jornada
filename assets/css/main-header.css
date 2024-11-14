@@ -57,6 +57,14 @@
         font-size: 2rem;
         line-height: 3rem;
     }
+
+    .main-header.contato {
+        transform: scaleX(-1);
+    }
+
+    .main-header-container {
+        transform: scaleX(-1);
+    }
 }
 
 @media screen and (min-width: 1440px) {
