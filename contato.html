@@ -29,10 +29,33 @@
                         <a class="header__nav__desktop__link" href="pacotes.html">Pacotes de viagem</a>
                     </li>
                     <li>
-                        <a class="header__nav__desktop__link" href="contato.html">Contato</a>
+                        <a class="header__nav__desktop__link" href="contato.html">
+                            <span class="link--underline">Contato</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
+
+            <div class="header__nav__mobile hidden">
+                <div class="header__nav__mobile__top">
+                    <img src="assets/images/header/logo-desktop-jornada.svg" alt="Logo da Jornada Viagens">
+                </div>
+                <ul class="header__nav__mobile__links">
+                    <li>
+                        <a href="index.html" class="header__nav__mobile__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="header__nav__mobile__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="pacotes.html" class="header__nav__mobile__link">Pacotes de viagem</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="header__nav__mobile__link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="backdrop hidden"></div>
         </header>
 
         <main>
@@ -68,14 +91,12 @@
                 </p>
 
                 <form action="#" class="form">
-                    <input type="text" name="name" id="name" placeholder="Seu nome">
-                    <input type="tel" name="tel" id="tel" placeholder="Telefone">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="text" name="assunto" id="assunto" placeholder="Assunto">
-                    <label for="textarea">
-                        Mensagem
-                        <textarea name="textarea" id="textarea" rows="6"></textarea>
-                    </label>
+                    <input class="active-input" type="text" name="name" id="name" placeholder="Seu nome" required>
+                    <input class="" type="tel" name="tel" id="tel" placeholder="Telefone" required>
+                    <input class="" type="email" name="email" id="email" placeholder="Email" required>
+                    <input class="" type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+                    <label class="" for="textarea">Mensagem</label>
+                    <textarea class="" name="textarea" id="textarea" rows="6" required></textarea>
                     <input type="submit" value="Enviar!" class="btn-link">
                 </form>
             </section>
@@ -118,6 +139,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="/assets/js/scripts.js"></script>
 </body>
 
 </html>

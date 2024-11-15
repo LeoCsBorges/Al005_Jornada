@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <header class="header">
+        <header class="header blog">
             <nav class="header__nav">
                 <a class="header__nav__logo" href="index.html">
                     <img class="header__nav__logo--mobile" src="assets/images/header/logo-mobile-jornada.svg"
@@ -23,7 +23,9 @@
                 <img class="header__nav__menu-mobile" src="assets/images/header/menu.svg" alt>
                 <ul class="header__nav__desktop">
                     <li>
-                        <a class="header__nav__desktop__link" href="blog.html">Blog</a>
+                        <a class="header__nav__desktop__link" href="blog.html">
+                            <span class="link--underline">Blog</span>
+                        </a>
                     </li>
                     <li>
                         <a class="header__nav__desktop__link" href="pacotes.html">Pacotes de viagem</a>
@@ -33,6 +35,27 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="header__nav__mobile hidden">
+                <div class="header__nav__mobile__top">
+                    <img src="assets/images/header/logo-desktop-jornada.svg" alt="Logo da Jornada Viagens">
+                </div>
+                <ul class="header__nav__mobile__links">
+                    <li>
+                        <a href="index.html" class="header__nav__mobile__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="header__nav__mobile__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="pacotes.html" class="header__nav__mobile__link">Pacotes de viagem</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="header__nav__mobile__link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="backdrop hidden"></div>
         </header>
 
         <main>
@@ -237,6 +260,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="/assets/js/scripts.js"></script>
 </body>
 
 </html>

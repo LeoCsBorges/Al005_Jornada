@@ -62,7 +62,7 @@
         transform: scaleX(-1);
     }
 
-    .main-header-container {
+    .main-header.contato .main-header-container {
         transform: scaleX(-1);
     }
 }
