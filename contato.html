@@ -90,13 +90,38 @@
                     seus dados que vamos retornar seu contato conforme a urgência do seu chamado. Pode confiar!
                 </p>
 
-                <form action="#" class="form">
-                    <input class="active-input" type="text" name="name" id="name" placeholder="Seu nome" required>
-                    <input class="" type="tel" name="tel" id="tel" placeholder="Telefone" required>
-                    <input class="" type="email" name="email" id="email" placeholder="Email" required>
-                    <input class="" type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+                <form action="http://localhost:3000/salvar-formulario" method="post" class="form">
+                    <div class="form__input">
+                        <input class="active-input" type="text" name="name" id="name" placeholder="Seu nome"
+                            minlength="5" data-required-message="Por favor, preencha com seu nome completo" required>
+                    </div>
+
+                    <div class="form__input">
+                        <input class="" type="text" name="tel" id="tel" placeholder="Telefone" minlength="15"
+                            data-required-message="Por favor, preencha o telefone no formato indicado: (XX) XXXXX-XXXX"
+                            required>
+                    </div>
+
+                    <div class="form__input">
+                        <input class="" type="email" name="email" id="email" placeholder="E-mail"
+                            data-required-message="Por favor, preencha com seu e-mail válido" required>
+                        <span id="email-suggestion" tabindex="-1"></span>
+                    </div>
+
+                    <div class="form__input">
+                        <input class="" type="text" name="assunto" id="assunto" placeholder="Assunto" minlength="3"
+                            data-required-message="Por favor, preencha com um assunto relacionado ao seu comentário"
+                            required>
+                    </div>
+
                     <label class="" for="textarea">Mensagem</label>
                     <textarea class="" name="textarea" id="textarea" rows="6" required></textarea>
+
+                    <label for="check">
+                        <input type="checkbox" name="check" id="check" required>
+                        Receber este formulário por e-mail
+                    </label>
+
                     <input type="submit" value="Enviar!" class="btn-link">
                 </form>
             </section>
@@ -140,7 +165,12 @@
         </footer>
     </div>
 
-    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/mailcheck.js"></script>
+    <script src="/assets/js/mailcheck-config.js"></script>
+</body>
 </body>
 
 </html>
