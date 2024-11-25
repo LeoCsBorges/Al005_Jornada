@@ -19,8 +19,8 @@ const makeTransporter = function () {
         port: 587,
         secure: false,
         auth: {
-            user: 'lucascamparaujo@gmail.com',
-            pass: 'nsch nifc vaqm owhn',
+            user: '',
+            pass: '',
         },
     })
 }
